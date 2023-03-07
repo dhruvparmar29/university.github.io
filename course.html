@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width,intial-scale=1.0">
+	<title>University Website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon_io/favicon-16x16.png">  
+	<link rel="stylesheet" href="stylsheet.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="bak to top">Top</button>
+	<section class="sub-header">
+	 <nav>
+	   <a href="index.html"><img src="logo.jpg"></a>
+	   <div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hideMenu()"></i>
+	     <ul>
+	       <li><a href="index.html">HOME</a></li>
+	       <li><a href="about.html">ABOUT</a></li>
+	       <li><a href="course.html">COURSE</a></li>
+	       <li><a href="blog.html">BLOG</a></li>
+	       <li><a href="contact.html">CONTACT</a></li>
+	     </ul>
+	   </div>
+		<i class="fa fa-bars " onclick="showMenu()" ></i>
+	 </nav>
+	 <h1>OUR COURSES</h1>
+	</section>
+<!--------------------------course---------------->
+	<section class="course">
+	  <h1>Courses We Offer</h1>
+	  <p>Find All The Information You Need On Web Design.</p>
+
+	  <div class="row">
+	    <div class="course-col">
+	    	<h3>Intermediate</h3>
+		<p>Become a Web Developer and build intelligent 
+		   chatbots, fintech wallets, and lots more.
+		   Preferred by 20000+ Learners. Capstone Project. 
+		   300+ top tech firms as hiring partners. Amenities: Dedicated Mentors,
+		   Job Placement Assistance, 1-to-1 Doubt Resolution, Career Counselling, Resume Feedback.</p>
+	    </div>
+	  <div class="course-col">
+	    	<h3>degree</h3>
+		<p>Become a Web Developer and build intelligent 
+		   chatbots, fintech wallets, and lots more.
+		   Preferred by 20000+ Learners. Capstone Project. 
+		   300+ top tech firms as hiring partners. Amenities: Dedicated Mentors,
+		   Job Placement Assistance, 1-to-1 Doubt Resolution, Career Counselling, Resume Feedback.</p>
+	    </div>
+	  <div class="course-col">
+	    	<h3>post graduation</h3>
+		<p>Become a Web Developer and build intelligent 
+		   chatbots, fintech wallets, and lots more.
+		   Preferred by 20000+ Learners. Capstone Project. 
+		   300+ top tech firms as hiring partners. Amenities: Dedicated Mentors,
+		   Job Placement Assistance, 1-to-1 Doubt Resolution, Career Counselling, Resume Feedback.</p>
+	    </div>
+	  </div>
+<!--------------facilities---------------->
+	<section class="facilities">
+	  <h1>Our Facilities</h1>
+	  <p>Find All The Information You Need On Web Design.</p>
+
+	  <div class="row">
+	    <div class="facilities-col">
+		<img src="library.jpeg">
+		<h3>World Class Library</h3>
+		<p>A website is a collection of web pages and 
+	   	   related content that is identified by a common 
+	    	   domain name and published on at least one web server.</p>
+	    </div>
+	    <div class="facilities-col">
+		<img src="basketball.jpg">
+		<h3>Largest Playground</h3>
+		<p>A website is a collection of web pages and 
+	   	   related content that is identified by acommon 
+	    	   domain name and published on at least one web server. </p>
+	    </div>
+	    <div class="facilities-col">
+		<img src="cafeteria.jpg">
+		<h3>Tasty and Healthy Food</h3>
+		<p>A website is a collection of web pages and 
+	   	   related content that is identified by a common 
+	    	   domain name and published on at least one web server.</p>
+	    </div>
+       	  </div>
+	</section>
+
+<!-------------------footer------------------->
+	<section class="footer">
+	  <h4>About us</h4>
+	  <p>A website is a collection of web pages and 
+	   	 related content that is identified by<br> a common 
+	    	 domain name and published on at least one web server.</p>
+	  <div class"icons">
+		<i class="fa fa-facebook"></i>	
+		<i class="fa fa-twitter"></i>	
+		<i class="fa fa-instagram"></i>	
+		<i class="fa fa-linkedin"></i>	
+		
+	  </div>
+	</section>
+<!---------------------------javascript------------------->
+<script>
+	var navLinks=document.getElementById("navLinks");
+	function showMenu(){
+	  navLinks.style.right="0";
+	}
+	function hideMenu(){
+	  navLinks.style.right="-200px";
+	}
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

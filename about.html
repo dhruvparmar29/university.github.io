@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width,intial-scale=1.0">
+	<title>University Website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="/favicon_io/favicon-16x16.png">
+	<link rel="stylesheet" href="stylsheet.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<section class="sub-header">
+	 <nav>
+	   <a href="index.html"><img src="logo.jpg"></a>
+	   <div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hideMenu()"></i>
+	     <ul>
+	       <li><a href="index.html">HOME</a></li>
+	       <li><a href="about.html">ABOUT</a></li>
+	       <li><a href="course.html">COURSE</a></li>
+	       <li><a href="blog.html">BLOG</a></li>
+	       <li><a href="contact.html">CONTACT</a></li>
+	     </ul>
+	   </div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	 </nav>
+	 <h1>ABOUT US</h1>
+	</section>
+<!--------------------about us content-------------------->
+	<section class="about-us">
+	 <div class="row">
+	  <div class="about-col">
+	   <h1>We are the world's largest university</h1>
+	   <p><h4> mentioned above, this is a perfect option if you’re 
+	      just beginning your career in web development. By web developers, 
+	      for web developers, Developer Drive offers the latest news in the
+	      world of web development. This includes opinion articles, tutorials, 
+	      tips & tricks to start off on the right foot. Are you looking to learn
+	      how to minimize downtime? How about ensuring your site is secure and easy for 
+	      consumers to navigate? Or would you like to keep tabs on every Microsoft 
+	      software release? From JavaScript to mobile development, Developer Drive has you covered.</h4></p>
+	    <a href="course.html" class="hero-btn">EXPLORE NOW</a>
+	  </div>
+	   <div class="about-col">
+	    <img src="about.jpg">
+	  </div>
+	 </div>
+	</section>	
+<!-------------------footer------------------->
+	<section class="footer">
+	  <h4>About us</h4>
+	  <p><h3>A website is a collection of web pages and 
+	   	 related content that is identified by<br> a common 
+	    	 domain name and published on at least one web server.</h3></p>
+	  <div class"icons">
+		<i class="fa fa-facebook"></i>	
+		<i class="fa fa-twitter"></i>	
+		<i class="fa fa-instagram"></i>	
+		<i class="fa fa-linkedin"></i>	
+		
+	  </div>
+	</section>
+<!----------------------javascript--------------------------->
+<script>
+	var navLinks=document.getElementById("navLinks");
+	function showMenu(){
+	  navLinks.style.right="0";
+	}
+	function hideMenu(){
+	 navLinks.style.right="-200px";
+	}
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
