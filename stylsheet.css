@@ -473,4 +473,5 @@ h3{
 	cursor: pointer;
 	padding: 10px;
 	border-radius: 4px;
+	scroll behavior: smooth;
   }
